@@ -2,7 +2,10 @@ import { Body, Controller, Put } from '@nestjs/common';
 import { UpdateTrackingV2Dto } from '@root/tracking/dtos/update-tracking-v2.dto';
 import { TrackingService } from './tracking.service';
 
-@Controller('shipments/tracking')
+@Controller({
+  version: '2',
+  path: 'shipments/tracking'
+})
 export class TrackingControllerV2 {
   constructor(private readonly trackingService: TrackingService) {}
 
