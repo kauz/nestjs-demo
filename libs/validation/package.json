@@ -1,0 +1,22 @@
+{
+  "name": "@stockx/validation",
+  "version": "1.0.0",
+  "description": "Joi validation wrappers",
+  "author": "Artem Popov <artempopov@v.stockx.com>",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "nest build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.7"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "8.x"
+  },
+  "dependencies": {
+    "joi": "^17.4.2"
+  }
+}

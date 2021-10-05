@@ -1,0 +1,21 @@
+{
+  "name": "@stockx/common",
+  "version": "1.0.0",
+  "description": "Various common code bits",
+  "author": "Artem Popov <artempopov@v.stockx.com>",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "nest build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@nestjs/common": "^8.0.7"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "8.x"
+  },
+  "dependencies": {}
+}

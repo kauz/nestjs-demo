@@ -1,0 +1,24 @@
+{
+  "name": "@stockx/nest-logging",
+  "version": "1.0.0",
+  "description": "Custom logger adjusted for nestjs projects",
+  "author": "Artem Popov <artempopov@v.stockx.com>",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "nest build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "pino": "^6.6.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.7",
+    "@types/pino": "^6.3.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "8.x"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "esnext"
+    ],
+    "esModuleInterop": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@root/*": [
+        "src/*"
+      ],
+      "@test/*": [
+        "test/*"
+      ],
+      "@resources/*": [
+        "resources/*"
+      ],
+      "@stockx/common": [
+        "libs/common/src"
+      ],
+      "@stockx/common/*": [
+        "libs/common/src/*"
+      ],
+      "@stockx/logging": [
+        "libs/logging/src"
+      ],
+      "@stockx/logging/*": [
+        "libs/logging/src/*"
+      ],
+      "@stockx/health": [
+        "libs/health/src"
+      ],
+      "@stockx/health/*": [
+        "libs/health/src/*"
+      ],
+      "@stockx/validation": [
+        "libs/validation/src"
+      ],
+      "@stockx/validation/*": [
+        "libs/validation/src/*"
+      ],
+      "@stockx/nest-knex": [
+        "libs/nest-knex/src"
+      ],
+      "@stockx/nest-knex/*": [
+        "libs/nest-knex/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

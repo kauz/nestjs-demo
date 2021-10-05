@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "stockx/common/(.*)": "<rootDir>/../libs/common/src/$1",
+    "stockx/common": "<rootDir>/../libs/common/src",
+    "stockx/logging/(.*)": "<rootDir>/../libs/logging/src/$1",
+    "stockx/logging": "<rootDir>/../libs/logging/src",
+    "stockx/health/(.*)": "<rootDir>/../libs/health/src/$1",
+    "stockx/health": "<rootDir>/../libs/health/src",
+    "@stockx/validation/(.*)": "<rootDir>/../libs/validation/src/$1",
+    "@stockx/validation": "<rootDir>/../libs/validation/src",
+    "@stockx/nest-knex/(.*)": "<rootDir>/../libs/nest-knex/src/$1",
+    "@stockx/nest-knex": "<rootDir>/../libs/nest-knex/src",
+    "@stockx/test/(.*)": "<rootDir>/../libs/test/src/$1",
+    "@stockx/test": "<rootDir>/../libs/test/src"
+  }
+}

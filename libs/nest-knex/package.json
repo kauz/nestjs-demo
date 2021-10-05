@@ -1,0 +1,26 @@
+{
+  "name": "@stockx/nest-knex",
+  "version": "1.0.0",
+  "description": "Nest wrapper for knex.js",
+  "author": "Artem Popov <artempopov@v.stockx.com>",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "build": "nest build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "knex": "^0.95.11",
+    "pg": "^8.7.1",
+    "pino": "^6.6.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.7",
+    "@types/pino": "^6.3.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "8.x"
+  }
+}
