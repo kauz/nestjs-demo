@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { RouterModule } from '@nestjs/core';
+// import { RouterModule } from '@nestjs/core';
 import { LoggerModule } from '@stockx/logging';
 import { CoreModule } from '@root/core/core.module';
 import config from '@root/config';
@@ -18,20 +18,20 @@ const modules = [
 
 @Module({
   imports: [
-    RouterModule.register([
-      {
-        path: 'shipments/tracking',
-        module: TrackingModule
-      },
-      {
-        path: 'shipments',
-        module: ShipmentsModule
-      },
-      {
-        path: 'labels',
-        module: LabelModule
-      }
-    ]),
+    // RouterModule.register([
+    //   {
+    //     path: 'shipments/tracking',
+    //     module: TrackingModule
+    //   },
+    //   {
+    //     path: 'shipments',
+    //     module: ShipmentsModule
+    //   },
+    //   {
+    //     path: 'labels',
+    //     module: LabelModule
+    //   }
+    // ]),
     LoggerModule.forRoot({
       env: config.get('app.env'),
       ...config.get('logging'),
@@ -42,8 +42,3 @@ const modules = [
   controllers: [AppController],
 })
 export class AppModule {}
-
-@Module({
-  imports: [CoreModule, ...modules],
-})
-export class SeedAppModule {}

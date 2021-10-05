@@ -20,10 +20,6 @@ describe('TrackingController', () => {
     trackingService = module.get(TrackingService);
   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
-
   describe('postTrackingUpdates', () => {
     it('should handle tracking updates', async () => {
       const res = await controller.postTrackingUpdates(trackingUpdateV2Fixture);

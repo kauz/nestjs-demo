@@ -28,7 +28,6 @@ module.exports = function (options) {
             '@nestjs/platform-socket.io',
             '@nestjs/websockets/socket-module',
             '@nestjs/microservices/microservices-module',
-            'fastify-swagger',
             'swagger-ui-express',
           ];
           if (!lazyImports.includes(resource)) {

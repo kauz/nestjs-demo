@@ -20,7 +20,7 @@ async function bootstrap() {
 
   app.useLogger(logger);
   app.use(helmet({ contentSecurityPolicy }));
-  app.setGlobalPrefix('api');
+  app.setGlobalPrefix('api/v1');
   app.enableVersioning({ type: VersioningType.URI });
   app.useGlobalFilters(new HttpExceptionFilterFastify());
   app.useGlobalPipes(

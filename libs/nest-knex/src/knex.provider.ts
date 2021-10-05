@@ -13,7 +13,7 @@ interface KnexConfig {
 
 @Injectable()
 export class KnexProvider {
-  public readonly connection: Knex;
+  public readonly connection: any;
   constructor(
     @Inject('DB_CONFIG') config: KnexConfig
   ) {

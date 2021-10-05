@@ -9,8 +9,7 @@ export class AddressService {
     private readonly knex: KnexProvider
   ) {}
 
-  async onModuleInit() {
-    const data = await this.knex.connection.select('*').from(this.tableName);
-    console.info(data);
+  getAddresses(): any {
+    return this.knex.connection.select('*').from(this.tableName);
   }
 }
