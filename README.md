@@ -6,10 +6,10 @@
 
 ```bash
 # clone the repository
-git clone $repo_url
+git clone git@github.com:kauz/nestjs-demo.git
 
 # go to project dir
-cd ./stockx-microservice-starter
+cd ./nestjs-demo
 
 # install
 $ npm install
